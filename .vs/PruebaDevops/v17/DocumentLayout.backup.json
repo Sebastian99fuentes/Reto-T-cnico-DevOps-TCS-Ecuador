@@ -1,0 +1,189 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|c:\\users\\sebas\\programas\\pruebadevops\\pruebadevops\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{589FB731-B92A-4C65-A915-A46F1330DC16}|OcelotGateway\\OcelotGateway.csproj|c:\\users\\sebas\\programas\\pruebadevops\\pruebadevops\\ocelotgateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{589FB731-B92A-4C65-A915-A46F1330DC16}|OcelotGateway\\OcelotGateway.csproj|solutionrelative:ocelotgateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|c:\\users\\sebas\\programas\\pruebadevops\\pruebadevops\\api\\endpoints\\msjendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|solutionrelative:api\\endpoints\\msjendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|c:\\users\\sebas\\programas\\pruebadevops\\pruebadevops\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ACA3923-8B67-4338-91FB-16550CE15FC1}|Tests\\Test\\Test.csproj|c:\\users\\sebas\\programas\\pruebadevops\\pruebadevops\\tests\\test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ACA3923-8B67-4338-91FB-16550CE15FC1}|Tests\\Test\\Test.csproj|solutionrelative:tests\\test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|c:\\users\\sebas\\programas\\pruebadevops\\pruebadevops\\api\\tokenservice\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|solutionrelative:api\\tokenservice\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82A1C2F8-1147-4928-8A62-DCB40C73314E}|AuthExtension\\AuthExtension.csproj|c:\\users\\sebas\\programas\\pruebadevops\\pruebadevops\\authextension\\authextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82A1C2F8-1147-4928-8A62-DCB40C73314E}|AuthExtension\\AuthExtension.csproj|solutionrelative:authextension\\authextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{589FB731-B92A-4C65-A915-A46F1330DC16}|OcelotGateway\\OcelotGateway.csproj|c:\\users\\sebas\\programas\\pruebadevops\\pruebadevops\\ocelotgateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{589FB731-B92A-4C65-A915-A46F1330DC16}|OcelotGateway\\OcelotGateway.csproj|solutionrelative:ocelotgateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|c:\\users\\sebas\\programas\\pruebadevops\\pruebadevops\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Api",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\Api.csproj",
+              "RelativeDocumentMoniker": "Api\\Api.csproj",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\Api.csproj",
+              "RelativeToolTip": "Api\\Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-29T03:01:58.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MsjEndPoints.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\Endpoints\\MsjEndPoints.cs",
+              "RelativeDocumentMoniker": "Api\\Endpoints\\MsjEndPoints.cs",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\Endpoints\\MsjEndPoints.cs",
+              "RelativeToolTip": "Api\\Endpoints\\MsjEndPoints.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwB4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T02:56:22.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ocelot.json",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\OcelotGateway\\ocelot.json",
+              "RelativeDocumentMoniker": "OcelotGateway\\ocelot.json",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\OcelotGateway\\ocelot.json",
+              "RelativeToolTip": "OcelotGateway\\ocelot.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-29T02:55:54.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Tests\\Test\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Tests\\Test\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Tests\\Test\\UnitTest1.cs",
+              "RelativeToolTip": "Tests\\Test\\UnitTest1.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAwwO0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T02:32:36.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\appsettings.json",
+              "RelativeToolTip": "Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-29T02:29:34.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\OcelotGateway\\Program.cs",
+              "RelativeDocumentMoniker": "OcelotGateway\\Program.cs",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\OcelotGateway\\Program.cs",
+              "RelativeToolTip": "OcelotGateway\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T02:28:14.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\AuthExtension\\AuthExtensions.cs",
+              "RelativeDocumentMoniker": "AuthExtension\\AuthExtensions.cs",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\AuthExtension\\AuthExtensions.cs",
+              "RelativeToolTip": "AuthExtension\\AuthExtensions.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T02:28:13.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\Program.cs",
+              "RelativeDocumentMoniker": "Api\\Program.cs",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\Program.cs",
+              "RelativeToolTip": "Api\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T02:28:12.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\TokenService\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "Api\\TokenService\\JwtTokenService.cs",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\TokenService\\JwtTokenService.cs",
+              "RelativeToolTip": "Api\\TokenService\\JwtTokenService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowB0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T02:28:10.718Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

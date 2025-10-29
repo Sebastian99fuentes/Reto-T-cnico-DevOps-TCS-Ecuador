@@ -1,0 +1,89 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/DevOps",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "api-node1",
+          "Port": 80
+        },
+        {
+          "Host": "api-node2",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/DevOps",
+      "UpstreamHttpMethod": [ "POST" ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "RouteClaimsRequirement": {
+        "scope": "api"
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "JwtKey",
+        "AllowedScopes": []
+      },
+      "AddHeadersToRequest": {
+        "Authorization": "Bearer {X-JWT-KWY}"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/DevOps",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "api-node1",
+          "Port": 80
+        },
+        {
+          "Host": "api-node2",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/DevOps",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS" ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/DevOpsToken",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "api-node1",
+          "Port": 80
+        },
+        {
+          "Host": "api-node2",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/DevOpsToken",
+      "UpstreamHttpMethod": [ "GET" ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10000,
+        "TimeoutValue": 5000
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5000"
+  }
+}

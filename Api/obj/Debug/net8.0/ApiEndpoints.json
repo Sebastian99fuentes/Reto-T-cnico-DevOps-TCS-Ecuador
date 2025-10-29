@@ -1,0 +1,144 @@
+[
+  {
+    "ContainingType": "Api.Endpoints.MsjEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMsjEndPoints\u003Eb__0_0",
+    "RelativePath": "DevOps",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Api.Models.MessageRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Messages"
+    ],
+    "EndpointName": "SendMessage"
+  },
+  {
+    "ContainingType": "Api.Endpoints.MsjEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMsjEndPoints\u003Eb__0_1",
+    "RelativePath": "DevOps",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api.Endpoints.MsjEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMsjEndPoints\u003Eb__0_1",
+    "RelativePath": "DevOps",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api.Endpoints.MsjEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMsjEndPoints\u003Eb__0_1",
+    "RelativePath": "DevOps",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api.Endpoints.MsjEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMsjEndPoints\u003Eb__0_1",
+    "RelativePath": "DevOps",
+    "HttpMethod": "PATCH",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api.Endpoints.MsjEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMsjEndPoints\u003Eb__0_1",
+    "RelativePath": "DevOps",
+    "HttpMethod": "HEAD",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api.Endpoints.MsjEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMsjEndPoints\u003Eb__0_1",
+    "RelativePath": "DevOps",
+    "HttpMethod": "OPTIONS",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api.Endpoints.MsjEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapMsjEndPoints\u003Eb__0_2",
+    "RelativePath": "DevOpsToken",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "DevOpsToken"
+    ],
+    "EndpointName": "DevOpsToken"
+  }
+]

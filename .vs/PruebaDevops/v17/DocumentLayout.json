@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{589FB731-B92A-4C65-A915-A46F1330DC16}|OcelotGateway\\OcelotGateway.csproj|c:\\users\\sebas\\programas\\pruebadevops\\pruebadevops\\ocelotgateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{589FB731-B92A-4C65-A915-A46F1330DC16}|OcelotGateway\\OcelotGateway.csproj|solutionrelative:ocelotgateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{589FB731-B92A-4C65-A915-A46F1330DC16}|OcelotGateway\\OcelotGateway.csproj|c:\\users\\sebas\\programas\\pruebadevops\\pruebadevops\\ocelotgateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{589FB731-B92A-4C65-A915-A46F1330DC16}|OcelotGateway\\OcelotGateway.csproj|solutionrelative:ocelotgateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|c:\\users\\sebas\\programas\\pruebadevops\\pruebadevops\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|c:\\users\\sebas\\programas\\pruebadevops\\pruebadevops\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ADE2D494-C871-495A-8EE8-9B3B7960CE33}|Api\\Api.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ocelot.json",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\OcelotGateway\\ocelot.json",
+              "RelativeDocumentMoniker": "OcelotGateway\\ocelot.json",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\OcelotGateway\\ocelot.json",
+              "RelativeToolTip": "OcelotGateway\\ocelot.json",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-29T03:23:48.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\Program.cs",
+              "RelativeDocumentMoniker": "Api\\Program.cs",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\Program.cs",
+              "RelativeToolTip": "Api\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T03:20:00.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Api",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\Api.csproj",
+              "RelativeDocumentMoniker": "Api\\Api.csproj",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Api\\Api.csproj",
+              "RelativeToolTip": "Api\\Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-29T03:19:54.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\OcelotGateway\\Program.cs",
+              "RelativeDocumentMoniker": "OcelotGateway\\Program.cs",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\OcelotGateway\\Program.cs",
+              "RelativeToolTip": "OcelotGateway\\Program.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAwE8AAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T03:19:49.466Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

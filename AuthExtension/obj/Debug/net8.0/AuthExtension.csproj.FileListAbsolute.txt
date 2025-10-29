@@ -1,0 +1,12 @@
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\bin\Debug\net8.0\AuthExtension.deps.json
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\bin\Debug\net8.0\AuthExtension.dll
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\bin\Debug\net8.0\AuthExtension.pdb
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.0\AuthExtension.csproj.AssemblyReference.cache
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.0\AuthExtension.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.0\AuthExtension.AssemblyInfoInputs.cache
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.0\AuthExtension.AssemblyInfo.cs
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.0\AuthExtension.csproj.CoreCompileInputs.cache
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.0\AuthExtension.dll
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.0\refint\AuthExtension.dll
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.0\AuthExtension.pdb
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.0\ref\AuthExtension.dll
