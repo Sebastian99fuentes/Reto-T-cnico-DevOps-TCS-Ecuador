@@ -1,3 +1,16 @@
+🔧 Tecnologías Utilizadas
+.NET 8.0 - Runtime principal
+
+Docker & Docker Compose - Containerización
+
+Ocelot - API Gateway & Load Balancer
+
+JWT - Autenticación
+
+xUnit - Testing framework
+
+Postman - Pruebas de integración
+
  DevOps Microservice - Banco Pichincha Assessment
 📋 Descripción del Proyecto
 Microservicio REST containerizado con load balancer, autenticación JWT y pipeline CI/CD, desarrollado para el assessment técnico de DevOps de Banco Pichincha.
