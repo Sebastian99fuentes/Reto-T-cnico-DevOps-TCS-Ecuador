@@ -2,15 +2,22 @@
 
 # This stage is used when running from VS in fast mode (Default for Debug configuration)
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+
+# Temporalmente cambiar a root para instalar curl
+USER root
+
+RUN apt-get update && \
+    apt-get install -y curl && \
+    rm -rf /var/lib/apt/lists/*
+
+# Volver al usuario original
+
 USER $APP_UID
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-# INSTALAR CURL - Esto es crucial para el health check
-RUN apt-get update && \
-    apt-get install -y curl && \
-    rm -rf /var/lib/apt/lists/*
+
 
 
 # This stage is used to build the service project
@@ -33,4 +40,5 @@ RUN dotnet publish "./Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:Use
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Api.dll"]
+ENTRYPOINT ["dotnet", "Api.dll"] 
+

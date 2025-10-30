@@ -39,6 +39,7 @@ builder.Services.AddJwtAuthentication(
 //  TOKEN SERVICE
 builder.Services.AddScoped<JwtTokenService>();
 
+
 builder.Services.AddAuthorization();
 
 

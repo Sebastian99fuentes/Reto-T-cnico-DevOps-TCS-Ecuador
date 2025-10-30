@@ -1,0 +1,173 @@
+trigger:
+  branches:
+    include:
+    - '*'
+  paths:
+    exclude:
+    - 'deploy/k8s/*'
+
+variables:
+  buildConfiguration: 'Release'
+  dotnetVersion: '8.0.x'
+  tag: '$(Build.BuildId)'
+  
+stages:
+  # Stage 1: Build
+  - stage: Build
+    displayName: 'Build and Analyze'
+    jobs:
+    - job: Build
+      displayName: 'Build and SonarQube Analysis'
+      pool:
+        vmImage: 'ubuntu-latest'
+      
+      steps:
+      - task: UseDotNet@2
+        displayName: 'Use .NET 8 SDK'
+        inputs:
+          version: '$(dotnetVersion)'
+          includePreview: true
+      
+      - task: DotNetCoreCLI@2
+        displayName: 'Restore Dependencies'
+        inputs:
+          command: 'restore'
+          projects: '**/*.csproj'
+      
+      # SonarQube Static Code Analysis
+      - task: SonarCloudPrepare@1
+        displayName: 'Prepare SonarQube Analysis'
+        inputs:
+          SonarCloud: 'SonarCloud'
+          organization: 'ssfuentes99'
+          scannerMode: 'MSBuild'
+          projectKey: '2e6a0b0b-f5a9-4f6a-b56e-2aa1a99b22a9'
+          projectName: 'PruebaDevops'
+      
+      - task: DotNetCoreCLI@2
+        displayName: 'Build Solution'
+        inputs:
+          command: 'build'
+          arguments: '--configuration $(buildConfiguration) --no-restore'
+      
+      - task: DotNetCoreCLI@2
+        displayName: 'Run SonarQube Analysis'
+        inputs:
+          command: 'sonarscanner'
+          arguments: 'end'
+      
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publish Build Artifacts'
+        inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+          ArtifactName: 'drop'
+          publishLocation: 'Container'
+
+  # Stage 2: Test
+  - stage: Test
+    displayName: 'Run Tests'
+    dependsOn: Build
+    jobs:
+    - job: UnitTests
+      displayName: 'Run Unit Tests'
+      pool:
+        vmImage: 'ubuntu-latest'
+      
+      steps:
+      - download: current
+        artifact: drop
+        
+      - task: UseDotNet@2
+        displayName: 'Use .NET 8 SDK'
+        inputs:
+          version: '$(dotnetVersion)'
+      
+      - task: DotNetCoreCLI@2
+        displayName: 'Run Unit Tests'
+        inputs:
+          command: 'test'
+          arguments: '--configuration $(buildConfiguration) --collect:"XPlat Code Coverage" --logger trx'
+          publishTestResults: true
+      
+      - task: PublishCodeCoverageResults@1
+        displayName: 'Publish Code Coverage'
+        inputs:
+          codeCoverageTool: 'Cobertura'
+          summaryFileLocation: '$(Agent.TempDirectory)/**/coverage.cobertura.xml'
+
+  # Stage 3: Security Scan
+  - stage: Security
+    displayName: 'Security Scan'
+    dependsOn: Test
+    jobs:
+    - job: SecurityScan
+      displayName: 'Dependency and Security Scan'
+      pool:
+        vmImage: 'ubuntu-latest'
+      
+      steps:
+      - task: DotNetCoreCLI@2
+        displayName: 'Dependency Security Check'
+        inputs:
+          command: 'restore'
+          arguments: '--force --interactive'
+      
+      - script: |
+          dotnet list package --vulnerable --include-transitive
+        displayName: 'Check for Vulnerable Packages'
+
+  # Stage 4: Deploy to Environments
+  - stage: Deploy_Development
+    displayName: 'Deploy to Development'
+    dependsOn: Test
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))
+    jobs:
+    - deployment: DeployDev
+      environment: 'development'
+      pool:
+        vmImage: 'ubuntu-latest'
+      strategy:
+        runOnce:
+          deploy:
+            steps:
+            - download: current
+              artifact: drop
+            
+            - task: KubernetesManifest@0
+              displayName: 'Deploy to Kubernetes'
+              inputs:
+                action: 'deploy'
+                kubernetesServiceConnection: 'k8s-dev-connection'
+                namespace: 'default'
+                manifests: 'deployments/k8s/*.yml'
+                containers: '$(containerRegistry)/$(imageRepository):$(tag)'
+
+  - stage: Deploy_Production
+    displayName: 'Deploy to Production'
+    dependsOn: 
+    - Test
+    - Security
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+    jobs:
+    - deployment: DeployProd
+      environment: 'production'
+      pool:
+        vmImage: 'ubuntu-latest'
+      strategy:
+        rolling:
+          maxUnavailable: '25%'
+          maxSurge: '25%'
+          deploy:
+            steps:
+            - download: current
+              artifact: drop
+            
+            - task: KubernetesManifest@0
+              displayName: 'Deploy to Production'
+              inputs:
+                action: 'deploy'
+                kubernetesServiceConnection: 'k8s-prod-connection'
+                namespace: 'production'
+                manifests: 'deploy/k8s/*.yml'
+                imagePullSecrets: 'regcred'
+                containers: '$(containerRegistry)/$(imageRepository):$(tag)'

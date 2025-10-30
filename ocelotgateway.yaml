@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ocelotgateway-deployment
+  labels:
+    app: ocelotgateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ocelotgateway
+  template:
+    metadata:
+      labels:
+        app: ocelotgateway
+    spec:
+      containers:
+        - name: ocelotgateway
+          image: ssfuentes99/ocelotgateway:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: Development
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ocelotgateway-service
+spec:
+  selector:
+    app: ocelotgateway
+  ports:
+    - protocol: TCP
+      port: 8010
+      targetPort: 8080
+  type: LoadBalancer

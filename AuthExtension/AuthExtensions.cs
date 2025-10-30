@@ -24,7 +24,7 @@ namespace AuthExtensions
                         ClockSkew = TimeSpan.Zero // o 0
                     };
 
-                    // 🆕 ACEPTAR TANTO Authorization: Bearer COMO X-JWT-KWY
+                    
                     options.Events = new JwtBearerEvents
                     {
                         OnMessageReceived = context =>
@@ -40,7 +40,7 @@ namespace AuthExtensions
                                 }
                             }
 
-                            // Opción 2: Header personalizado del PDF
+                           
                             if (context.Request.Headers.ContainsKey("X-JWT-KWY"))
                             {
                                 context.Token = context.Request.Headers["X-JWT-KWY"].ToString();

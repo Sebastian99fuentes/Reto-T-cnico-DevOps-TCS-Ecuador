@@ -2,15 +2,12 @@
 
 # This stage is used when running from VS in fast mode (Default for Debug configuration)
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-USER $APP_UID
-WORKDIR /app
-EXPOSE 80
-EXPOSE 443
 
-# Instalar curl también en el gateway
-RUN apt-get update && \
-    apt-get install -y curl && \
-    rm -rf /var/lib/apt/lists/*
+# Volver al usuario original
+USER $APP_UID
+WORKDIR /appd
+EXPOSE 8080
+
 
 # This stage is used to build the service project
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build

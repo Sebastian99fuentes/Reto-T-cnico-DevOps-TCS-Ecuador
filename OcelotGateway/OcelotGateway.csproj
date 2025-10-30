@@ -10,10 +10,12 @@
 
   <ItemGroup>
 	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.19" />
+	  <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10" />
 	  <PackageReference Include="Ocelot" Version="24.0.1" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
+	
 
   <ItemGroup>
     <ProjectReference Include="..\AuthExtension\AuthExtension.csproj" />

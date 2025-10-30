@@ -1,0 +1,70 @@
+
+trigger:
+  branches:
+    include:
+    - '*'
+  paths:
+    exclude:
+    - 'Tests/*'
+    - 'Deployment/*'
+    - 'OcelotGateway/*'
+    - 'AuthExtension/*'
+    - 'SolutionItems/*'
+
+pr: none  
+
+variables:
+  buildConfiguration: 'Release'
+  dotnetVersion: '8.0.x'
+
+stages:
+  - stage: Build
+    displayName: 'Build and SonarQube Analysis'
+    jobs:
+    - job: BuildAndAnalyze
+      displayName: 'Build and Analyze with SonarQube'
+      pool:
+        vmImage: 'windows-latest'
+      
+      steps:
+      - task: UseDotNet@2
+        displayName: 'Use .NET 8 SDK'
+        inputs:
+          version: '$(dotnetVersion)'
+          includePreview: true
+      
+      - task: DotNetCoreCLI@2
+        displayName: 'Restore Dependencies'
+        inputs:
+          command: 'restore'
+          projects: '**/Api/*.csproj'  
+      
+                                                            # # SonarQube Static Code Analysis
+      - task: SonarCloudPrepare@1
+        displayName: 'Prepare SonarQube Analysis'
+        inputs:
+          SonarCloud: 'SonarCloud'
+          organization: 'ssfuentes99'
+          scannerMode: 'MSBuild'
+          projectKey: '2e6a0b0b-f5a9-4f6a-b56e-2aa1a99b22a9'
+          projectName: 'PruebaDevops'
+      
+      - task: DotNetCoreCLI@2
+        displayName: 'Build API'
+        inputs:
+          command: 'build'
+          projects: '**/Api/*.csproj'
+          arguments: '--configuration $(buildConfiguration) --no-restore'
+      
+      - task: DotNetCoreCLI@2
+        displayName: 'Run SonarQube Analysis'
+        inputs:
+          command: 'sonarscanner'
+          arguments: 'end'
+      
+      - task: PublishBuildArtifacts@1
+        displayName: 'Publish Build Artifacts'
+        inputs:
+          PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+          ArtifactName: 'build-output'
+          publishLocation: 'Container'

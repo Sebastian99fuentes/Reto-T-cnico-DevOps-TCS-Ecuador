@@ -1,0 +1,44 @@
+trigger:
+  branches:
+    include:
+    - '*'
+pr:
+  branches:
+    include:
+    - '*'  
+
+variables:
+  buildConfiguration: 'Release'
+  dotnetVersion: '8.0.x'
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- task: UseDotNet@2
+  displayName: 'Install .NET 8'
+  inputs:
+    version: '$(dotnetVersion)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Restore Test Projects'
+  inputs:
+    command: 'restore'
+    projects: 'Tests/Test/*.csproj'  
+
+- task: DotNetCoreCLI@2
+  displayName: 'Run Tests in Tests/Test/'
+  inputs:
+    command: 'test'
+    projects: 'Tests/Test/*.csproj'  
+    arguments: '--configuration $(buildConfiguration) --collect:"Code Coverage" --logger trx --verbosity normal'
+    publishTestResults: true
+
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish Code Coverage'
+  inputs:
+    codeCoverageTool: 'cobertura'
+    summaryFileLocation: '$(Agent.TempDirectory)/**/coverage.cobertura.xml'
+
+- script: echo 'Tests ejecutados exitosamente'
+  displayName: 'Test Completion Message'

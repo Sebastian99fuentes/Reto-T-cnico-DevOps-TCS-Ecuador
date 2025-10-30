@@ -56,3 +56,4 @@ C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\Api\obj\Debug\net8.0\refint\A
 C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\Api\obj\Debug\net8.0\Api.pdb
 C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\Api\obj\Debug\net8.0\Api.genruntimeconfig.cache
 C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\Api\obj\Debug\net8.0\ref\Api.dll
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\Api\obj\Debug\net8.0\Api.sourcelink.json

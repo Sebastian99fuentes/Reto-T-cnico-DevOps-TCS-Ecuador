@@ -1,14 +1,18 @@
 services:
   # Primer nodo del API
-  api-node1:
+  api:
     image: ${DOCKER_REGISTRY-}api
     build:
       context: .
       dockerfile: Api/Dockerfile
     environment:
-      - ASPNETCORE_ENVIRONMENT=Production
-      - INSTANCE_NAME=API-Node-1
+      - ASPNETCORE_ENVIRONMENT=Development
+      # - INSTANCE_NAME=${HOSTNAME}
       - ASPNETCORE_URLS=http://+:80
+    # ports:
+    #   - "8080:80"
+    expose:
+      - "80"  
     networks:
       - app-network
     healthcheck:
@@ -16,37 +20,20 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
+      start_period: 40s
 
-  # Segundo nodo del API (requerimiento mínimo)
-  api-node2:
-    image: ${DOCKER_REGISTRY-}api
-    build:
-      context: .
-      dockerfile: Api/Dockerfile
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Production
-      - INSTANCE_NAME=API-Node-2
-      - ASPNETCORE_URLS=http://+:80 
-    networks:
-      - app-network
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-
+  # Gateway con Load Balancer
   ocelotgateway:
     image: ${DOCKER_REGISTRY-}ocelotgateway
     build:
       context: .
       dockerfile: OcelotGateway/Dockerfile
     ports:
-      - "5000:80"  # Puerto expuesto al host
+      - "8010:8080"
     environment:
-      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
-      - api-node1
-      - api-node2
+      - api
     networks:
       - app-network
 

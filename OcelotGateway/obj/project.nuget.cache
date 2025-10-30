@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "X9dXx1vS8Aw=",
+  "dgSpecHash": "eZQFqwQrzcI=",
   "success": true,
   "projectFilePath": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\OcelotGateway\\OcelotGateway.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\sebas\\.nuget\\packages\\microsoft.aspnetcore.middlewareanalysis\\8.0.15\\microsoft.aspnetcore.middlewareanalysis.8.0.15.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\8.0.15\\microsoft.aspnetcore.mvc.newtonsoftjson.8.0.15.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
+    "C:\\Users\\sebas\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.10\\microsoft.aspnetcore.openapi.8.0.10.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.19\\microsoft.entityframeworkcore.8.0.19.nupkg.sha512",
     "C:\\Users\\sebas\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.19\\microsoft.entityframeworkcore.abstractions.8.0.19.nupkg.sha512",

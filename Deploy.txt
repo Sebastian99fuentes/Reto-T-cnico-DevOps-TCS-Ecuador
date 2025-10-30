@@ -1,0 +1,22 @@
+
+kubectl apply -f k8s-deployment.yml
+
+# Ver los servicios (para obtener la IP externa del gateway)
+kubectl get services
+
+kubectl get pods
+
+kubectl logs -l app=ocelotgateway
+
+kubectl logs -l app=api 
+
+docker build -t ssfuentes99/ocelotgateway:latest -f OcelotGateway/Dockerfile .
+
+docker push ssfuentes99/ocelotgateway:latest 
+
+
+# Ver réplicas cambiando
+kubectl get pods -w
+
+# Ver recursos
+kubectl top pods

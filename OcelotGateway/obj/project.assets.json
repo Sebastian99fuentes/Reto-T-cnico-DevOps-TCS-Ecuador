@@ -203,6 +203,25 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Microsoft.AspNetCore.OpenApi/8.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.4.3"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
@@ -1012,6 +1031,21 @@
         "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.xml",
         "microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
         "microsoft.aspnetcore.mvc.versioning.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.OpenApi/8.0.10": {
+      "sha512": "kzYiW/IbSN0xittjplA8eN1wrNcRi3DMalYRrEuF2xyf2Y5u7cGCfgN1oNZ+g3aBQzMKTQwYsY1PeNmC+P0WnA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/8.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net8.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.8.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -2230,6 +2264,7 @@
     "net8.0": [
       "AuthExtension >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.19",
+      "Microsoft.AspNetCore.OpenApi >= 8.0.10",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
       "Ocelot >= 24.0.1",
       "Swashbuckle.AspNetCore >= 6.6.2"
@@ -2292,6 +2327,10 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[8.0.19, )"
+          },
+          "Microsoft.AspNetCore.OpenApi": {
+            "target": "Package",
+            "version": "[8.0.10, )"
           },
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",

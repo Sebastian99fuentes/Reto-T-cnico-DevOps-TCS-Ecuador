@@ -10,3 +10,4 @@ C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.
 C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.0\refint\AuthExtension.dll
 C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.0\AuthExtension.pdb
 C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.0\ref\AuthExtension.dll
+C:\Users\sebas\Programas\PruebaDevops\PruebaDevops\AuthExtension\obj\Debug\net8.0\AuthExtension.sourcelink.json
