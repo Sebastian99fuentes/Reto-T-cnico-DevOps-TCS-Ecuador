@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{960D76B7-27D5-41C7-B03F-4D640E272D6E}|NewFolder1{960D76B7-27D5-41C7-B03F-4D640E272D6E}|C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\AzurePipelineTest.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{960D76B7-27D5-41C7-B03F-4D640E272D6E}|NewFolder1{960D76B7-27D5-41C7-B03F-4D640E272D6E}|solutionrelative:AzurePipelineTest.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{CE8CCA97-F660-445E-99CF-C03D15DFB818}|k8s{CE8CCA97-F660-445E-99CF-C03D15DFB818}|C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\api.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CE8CCA97-F660-445E-99CF-C03D15DFB818}|k8s{CE8CCA97-F660-445E-99CF-C03D15DFB818}|solutionrelative:api.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|Deployments{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Deploy.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|Deployments{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:Deploy.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{960D76B7-27D5-41C7-B03F-4D640E272D6E}|Azure{960D76B7-27D5-41C7-B03F-4D640E272D6E}|C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\AzurePipelineTest.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{960D76B7-27D5-41C7-B03F-4D640E272D6E}|Azure{960D76B7-27D5-41C7-B03F-4D640E272D6E}|solutionrelative:AzurePipelineTest.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{960D76B7-27D5-41C7-B03F-4D640E272D6E}|Azure{960D76B7-27D5-41C7-B03F-4D640E272D6E}|C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\AzurePipelinBuildSonarQ.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{960D76B7-27D5-41C7-B03F-4D640E272D6E}|Azure{960D76B7-27D5-41C7-B03F-4D640E272D6E}|solutionrelative:AzurePipelinBuildSonarQ.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,6 +47,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "api.yml",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\api.yml",
+              "RelativeDocumentMoniker": "api.yml",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\api.yml",
+              "RelativeToolTip": "api.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-10-30T02:13:43.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Deploy.txt",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Deploy.txt",
+              "RelativeDocumentMoniker": "Deploy.txt",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\Deploy.txt",
+              "RelativeToolTip": "Deploy.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-30T02:13:42.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AzurePipelinBuildSonarQ.yaml",
+              "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\AzurePipelinBuildSonarQ.yaml",
+              "RelativeDocumentMoniker": "AzurePipelinBuildSonarQ.yaml",
+              "ToolTip": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\AzurePipelinBuildSonarQ.yaml",
+              "RelativeToolTip": "AzurePipelinBuildSonarQ.yaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-10-30T02:13:35.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AzurePipelineTest.yaml",
               "DocumentMoniker": "C:\\Users\\sebas\\Programas\\PruebaDevops\\PruebaDevops\\AzurePipelineTest.yaml",
               "RelativeDocumentMoniker": "AzurePipelineTest.yaml",
